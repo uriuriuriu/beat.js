@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+* {
+  color: #dddddd;
+}
+
+body {
+  background-color: #333;
+  font-size: 12px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px #111111, 1px 1px #111111, 2px 2px #111111, 3px 3px #111111, 4px 4px #111111, 5px 5px #111111, 6px 6px #111111, 7px 7px #111111, 8px 8px #111111, 9px 9px #111111, 10px 10px #111111, 11px 11px #111111, 12px 12px #111111, 13px 13px #111111, 14px 14px #111111, 15px 15px #111111, 16px 16px #111111, 17px 17px #111111, 18px 18px #111111, 19px 19px #111111, 20px 20px #111111, 21px 21px #111111, 22px 22px #111111, 23px 23px #111111, 24px 24px #111111, 25px 25px #111111, 26px 26px #111111, 27px 27px #111111, 28px 28px #111111, 29px 29px #111111, 30px 30px #111111, 31px 31px #111111, 32px 32px #111111, 33px 33px #111111, 34px 34px #111111, 35px 35px #111111, 36px 36px #111111, 37px 37px #111111, 38px 38px #111111, 39px 39px #111111, 40px 40px #111111, 41px 41px #111111, 42px 42px #111111, 43px 43px #111111, 44px 44px #111111, 45px 45px #111111, 46px 46px #111111, 47px 47px #111111, 48px 48px #111111, 49px 49px #111111, 50px 50px #111111;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: #dddd22;
+  z-index: 100;
+}
+
+#box {
+  margin: 0 auto;
+  width: 600px;
+}
+
+@-webkit-keyframes showAnimation {
+  0% {
+    -webkit-transform: scale(0.1, 0);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: scale(1.1, 0.1);
+    opacity: 0.4;
+  }
+
+  94% {
+    -webkit-transform: scale(1.04, 1.04);
+    opacity: 0.8;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+.content {
+  width: 600px;
+  margin-bottom: 10px;
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: showAnimation 0.25s ease-out;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+  background-color: #111111;
+  border: 4px solid #111111;
+  -moz-border-radius: 10px / 10px;
+  -webkit-border-radius: 10px 10px;
+  border-radius: 10px / 10px;
+}
+
+.msg {
+  width: 500px;
+  margin-left: 10px;
+  background-color: #ccc;
+  color: #333;
+  padding: 10px;
+  -moz-border-radius: 10px / 10px;
+  -webkit-border-radius: 10px 10px;
+  border-radius: 10px / 10px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 28px;
+  position: relative;
+  border: 4px solid #111111;
+}
+
+.msg:after, .arrow_box:before {
+  right: 100%;
+  top: 50px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.msg:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #ccc;
+  border-width: 10px;
+  margin-top: -30px;
+}
+
+.msg:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-right-color: #111111;
+  border-width: 36px;
+  margin-top: -36px;
+}
